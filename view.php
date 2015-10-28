@@ -56,6 +56,7 @@ Email: <?=$customer['email_s']?><br>
 	<th>Pickup Date</th>
 	<th>Total</th>
 </tr>
+<?php if (!empty($customer['orders'])): ?>
 <?php foreach ($customer['orders'] as $date => $order) {?>
 <tr>
 	<td><?=$order['order_date']?></td>
@@ -64,6 +65,7 @@ Email: <?=$customer['email_s']?><br>
 	<td>$<?=$order['total']?></td>
 </tr>
 <?php } ?>
+<?php endif; ?>
 </table>
 </div>
 </body>
