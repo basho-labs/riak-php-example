@@ -1,0 +1,5 @@
+{
+  "require": {
+    "basho/riak": "3.0.x-dev"
+  }
+}
